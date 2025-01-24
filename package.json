@@ -29,10 +29,6 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.3",
-    "he": "^1.2.0",
-    "markdown-it": "^14.1.0",
-    "markdown-it-container": "^4.0.0",
-    "markdown-it-html-entities": "^1.0.1"
+    "bootstrap": "^5.3.3"
   }
 }
