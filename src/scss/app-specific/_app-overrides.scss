@@ -1,5 +1,71 @@
-#launcherButton {
-  svg {
-    vertical-align: inherit;
+$table-introducing-color: #fff9c4; // pastel yellow
+$table-competent-color: #ffe0b2; // pastel orange
+$table-proficient-color: #ffccbc; // pastel red
+$table-expert-color: #e1bee7; // pastel purple
+$table-master-color: #bbdefb; // pastel blue
+$table-sustainable-color: #c8e6c9; // pastel green
+
+
+
+.table-skills {
+  font-size: 0.9rem;
+  text-wrap: balance;
+  th,
+  td {
+    border-color: #000;
+  }
+
+  ul {
+    margin-bottom: 0 !important;
+  }
+
+  .table-group-divider {
+    border-color: #bfbfbf;
+  }
+  thead {
+    th {
+      background-color: $rmit-blue;
+    }
+    th,
+    td {
+      border-color: #bfbfbf;
+    }
+  }
+
+  tbody tr th {
+    font-weight: 400;
+    min-width: 10rem;
+
+    strong {
+      display: block;
+    }
+  }
+
+  .table-introducing th,
+  .table-introducing td {
+    background-color: $table-introducing-color; // pastel orange
+  }
+
+  .table-competent th,
+  .table-competent td {
+    background-color: $table-competent-color; // pastel orange
+  }
+
+  .table-proficient th,
+  .table-proficient td {
+    background-color: $table-proficient-color; // pastel red
+  }
+  .table-expert th,
+  .table-expert td {
+    background-color: $table-expert-color; // pastel purple
+  }
+
+  .table-master th,
+  .table-master td {
+    background-color: $table-master-color; // pastel blue
+  }
+  .table-sustainable th,
+  .table-sustainable td {
+    background-color: $table-sustainable-color; // pastel green
   }
 }

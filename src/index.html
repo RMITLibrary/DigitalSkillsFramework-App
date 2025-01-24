@@ -6,78 +6,237 @@
     <title><%= htmlWebpackPlugin.options.title %> Digital Skills/Systems Growth Framework</title>
   </head>
   <body>
-    <div class="container my-5">
+    <header>
+      <a href="#main-content" class="visually-hidden-focusable" data-ga-event="skip_to_content">Skip to main content</a>
+      <div class="top-navigation">
+        <div class="container">
+          <div class="row">
+            <div class="col-auto left-nav">
+              <a aria-label="Royal Melbourne Institute of Technology University Logo" href="https://www.rmit.edu.au/">
+                <div class="rmit-logo"><span class="visually-hidden">RMIT University logo</span></div>
+              </a>
+              <a href="https://www.rmit.edu.au/library" tabindex="0" class="h2" data-ga-event="home_click">Library<span class="visually-hidden"> homepage</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container-fluid" id="main-content">
       <h1 class="text-center mb-4">Digital Objects - User Skills and Experience Growth Framework</h1>
+
+      <div id="scrollMessage" class="alert alert-primary" role="alert">Scroll the table horizontally to view more details.</div>
+
       <div class="table-responsive">
-        <table class="table table-bordered">
+        <table class="table table-bordered table-skills">
           <caption>
             Digital Skills/Systems Growth Framework Table
           </caption>
-          <thead>
+          <thead class="table-dark">
             <tr>
-              <th scope="col" rowspan="2">Digital skills/systems growth framework</th>
-              <th scope="col" colspan="3">Simple objects</th>
-              <th scope="col" colspan="4">Complex objects</th>
-              <th scope="col" colspan="3">Systems and platforms</th>
-              <th scope="col" colspan="2">Meta - Information / content management</th>
+              <th scope="col" rowspan="2" class="align-middle">Digital skills/systems growth framework</th>
+              <th scope="col" colspan="3" class="text-center">Simple objects</th>
+              <th scope="col" colspan="4" class="text-center">Complex objects</th>
+              <th scope="col" colspan="3" class="text-center">Systems and platforms</th>
+              <th scope="col" colspan="2" class="text-center">Meta - Information / content management</th>
             </tr>
             <tr>
-              <th scope="col">Documents - text / pdf / MS365</th>
-              <th scope="col">Image creation - raster/vector</th>
-              <th scope="col">Video / audio capture and post production</th>
-              <th scope="col">Animation 2D / 3D</th>
-              <th scope="col">3D / XR objects & environments</th>
-              <th scope="col">Publishing platforms (Pressbooks, Libguides, H5P)</th>
-              <th scope="col">Data & analytics, dashboards</th>
-              <th scope="col">Intranet</th>
-              <th scope="col">Websites</th>
-              <th scope="col">Systems and platforms used in the Library</th>
-              <th scope="col">Assets and content management systems and tools</th>
-              <th scope="col">Preservation systems and tools</th>
+              <th scope="col" class="text-center align-middle">Documents - text / pdf / MS365</th>
+              <th scope="col" class="text-center align-middle">Image creation - raster/vector</th>
+              <th scope="col" class="text-center align-middle">Video / audio capture and post production</th>
+              <th scope="col" class="text-center align-middle">Animation 2D / 3D</th>
+              <th scope="col" class="text-center align-middle">3D / XR objects & environments</th>
+              <th scope="col" class="text-center align-middle">Publishing platforms (Pressbooks, Libguides, H5P)</th>
+              <th scope="col" class="text-center align-middle">Data & analytics, dashboards</th>
+              <th scope="col" class="text-center align-middle">Intranet</th>
+              <th scope="col" class="text-center align-middle">Websites</th>
+              <th scope="col" class="text-center align-middle">Systems and platforms used in the Library</th>
+              <th scope="col" class="text-center align-middle">Assets and content management systems and tools</th>
+              <th scope="col" class="text-center align-middle">Preservation systems and tools</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row">Introductory (beginning practice) literacy and understanding of digital assets and systems</th>
-              <td colspan="3">Can follow guidelines for creating simple digital objects. Understands basic tools and software. Can produce simple text documents, basic images, and simple video/audio clips.</td>
-              <td colspan="4">Can follow guidelines for creating complex digital objects. Understands intermediate tools and software. Can produce complex documents, advanced images, and detailed video/audio clips.</td>
-              <td colspan="3">Understands and can navigate basic systems and platforms used in the library. Can manage basic information and data within these systems.</td>
-              <td colspan="2">Understands basic information and content management principles. Can create and manage simple documents and files.</td>
+            <tr class="table-introducing">
+              <th scope="row"><strong>Introductory (beginning practice)</strong> literacy and understanding of digital assets and systems</th>
+              <td colspan="3">
+                <ul>
+                  <li>Can follow guidelines for creating simple digital objects.</li>
+                  <li>Understands basic tools and software.</li>
+                  <li>Can produce simple text documents, basic images, and simple video/audio clips.</li>
+                </ul>
+              </td>
+              <td colspan="4">
+                <ul>
+                  <li>Can follow guidelines for creating complex digital objects.</li>
+                  <li>Understands intermediate tools and software.</li>
+                  <li>Can produce complex documents, advanced images, and detailed video/audio clips.</li>
+                </ul>
+              </td>
+              <td colspan="3">
+                <ul>
+                  <li>Understands and can navigate basic systems and platforms used in the library.</li>
+                  <li>Can manage basic information and data within these systems.</li>
+                </ul>
+              </td>
+              <td colspan="2">
+                <ul>
+                  <li>Understands basic information and content management principles.</li>
+                  <li>Can create and manage simple documents and files.</li>
+                </ul>
+              </td>
             </tr>
-            <tr>
-              <th scope="row">Competence (emerging practice) creation of assets in a range of digital media formats, can follow guidelines</th>
-              <td colspan="3">Can collaborate with others in creating simple digital objects. Has a basic understanding of production and post-production methods. Can ensure that basic accessibility standards are met.</td>
-              <td colspan="4">Can collaborate with others in creating complex digital objects. Understands advanced production and post-production methods. Can ensure accessibility standards are met for complex objects.</td>
-              <td colspan="3">Can collaborate with others in using systems and platforms. Can manage and analyse data, ensuring proper information architecture and user experience.</td>
-              <td colspan="2">Can collaborate on information and content management projects. Understands data analytics and can manage more complex information systems.</td>
+            <tr class="table-competent">
+              <th scope="row"><strong>Competence (emerging practice)</strong> creation of assets in a range of digital media formats, can follow guidelines</th>
+              <td colspan="3">
+                <ul>
+                  <li>Can collaborate with others in creating simple digital objects.</li>
+                  <li>Has a basic understanding of production and post-production methods.</li>
+                  <li>Can ensure that basic accessibility standards are met.</li>
+                </ul>
+              </td>
+              <td colspan="4">
+                <ul>
+                  <li>Can collaborate with others in creating complex digital objects.</li>
+                  <li>Understands advanced production and post-production methods.</li>
+                  <li>Can ensure accessibility standards are met for complex objects.</li>
+                </ul>
+              </td>
+              <td colspan="3">
+                <ul>
+                  <li>Can collaborate with others in using systems and platforms.</li>
+                  <li>Can manage and analyse data, ensuring proper information architecture and user experience.</li>
+                </ul>
+              </td>
+              <td colspan="2">
+                <ul>
+                  <li>Can collaborate on information and content management projects.</li>
+                  <li>Understands data analytics and can manage more complex information systems.</li>
+                </ul>
+              </td>
             </tr>
-            <tr>
-              <th scope="row">Proficiency (growing practice) production and post-production methods and processes, understands accessibility, can collaborate with others</th>
-              <td colspan="3">Can lead or teach others in creating simple digital objects. Can develop guidelines and best practices. Can oversee the production and quality assurance of simple digital objects.</td>
-              <td colspan="4">Can lead or teach others in creating complex digital objects. Can develop comprehensive guidelines and best practices. Can oversee the production and quality assurance of complex digital objects.</td>
-              <td colspan="3">Can lead or teach others in using and managing systems and platforms. Can develop and implement complex resources, systems, and platforms. Can devise strategies for system management, including continuity and risk management.</td>
-              <td colspan="2">Can lead or teach others in information and content management. Can develop and implement comprehensive information management strategies. Can devise and implement preservation strategies for digital assets.</td>
+            <tr class="table-proficient">
+              <th scope="row"><strong>Proficiency (growing practice)</strong> production and post-production methods and processes, understands accessibility, can collaborate with others</th>
+              <td colspan="3">
+                <ul>
+                  <li>Can lead or teach others in creating simple digital objects.</li>
+                  <li>Can develop guidelines and best practices.</li>
+                  <li>Can oversee the production and quality assurance of simple digital objects.</li>
+                </ul>
+              </td>
+              <td colspan="4">
+                <ul>
+                  <li>Can lead or teach others in creating complex digital objects.</li>
+                  <li>Can develop comprehensive guidelines and best practices.</li>
+                  <li>Can oversee the production and quality assurance of complex digital objects.</li>
+                </ul>
+              </td>
+              <td colspan="3">
+                <ul>
+                  <li>Can lead or teach others in using and managing systems and platforms.</li>
+                  <li>Can develop and implement complex resources, systems, and platforms.</li>
+                  <li>Can devise strategies for system management, including continuity and risk management.</li>
+                </ul>
+              </td>
+              <td colspan="2">
+                <ul>
+                  <li>Can lead or teach others in information and content management.</li>
+                  <li>Can develop and implement comprehensive information management strategies.</li>
+                  <li>Can devise and implement preservation strategies for digital assets.</li>
+                </ul>
+              </td>
             </tr>
-            <tr>
-              <th scope="row">Expertise (established practice) design thinking / aesthetic language / interaction, information architecture & user experience, can lead/teach others, develop guidelines</th>
-              <td colspan="3">Can create complex guidelines for simple digital objects. Provides advanced support and troubleshooting. Ensures high-quality production and adherence to best practices.</td>
-              <td colspan="4">Can create comprehensive guidelines for complex digital objects. Provides advanced support and troubleshooting. Ensures high-quality production and adherence to best practices.</td>
-              <td colspan="3">Can create comprehensive guidelines for systems and platforms. Provides advanced support and troubleshooting. Ensures high-quality management and adherence to best practices.</td>
-              <td colspan="2">Can create comprehensive guidelines for information and content management. Provides advanced support and troubleshooting. Ensures high-quality management and adherence to best practices.</td>
+            <tr class="table-expert">
+              <th scope="row"><strong>Expertise (established practice)</strong> design thinking / aesthetic language / interaction, information architecture & user experience, can lead/teach others, develop guidelines</th>
+              <td colspan="3">
+                <ul>
+                  <li>Can create complex guidelines for simple digital objects.</li>
+                  <li>Provides advanced support and troubleshooting.</li>
+                  <li>Ensures high-quality production and adherence to best practices.</li>
+                </ul>
+              </td>
+              <td colspan="4">
+                <ul>
+                  <li>Can create comprehensive guidelines for complex digital objects.</li>
+                  <li>Provides advanced support and troubleshooting.</li>
+                  <li>Ensures high-quality production and adherence to best practices.</li>
+                </ul>
+              </td>
+              <td colspan="3">
+                <ul>
+                  <li>Can create comprehensive guidelines for systems and platforms.</li>
+                  <li>Provides advanced support and troubleshooting.</li>
+                  <li>Ensures high-quality management and adherence to best practices.</li>
+                </ul>
+              </td>
+              <td colspan="2">
+                <ul>
+                  <li>Can create comprehensive guidelines for information and content management.</li>
+                  <li>Provides advanced support and troubleshooting.</li>
+                  <li>Ensures high-quality management and adherence to best practices.</li>
+                </ul>
+              </td>
             </tr>
-            <tr>
-              <th scope="row">Mastery (mentoring and advisory practice) development / implementation of complex resources / systems / platforms, can lead/mentor others, advisory role, expert in the field</th>
-              <td colspan="3">Mentors others in creating simple digital objects. Advises on best practices and innovative solutions. Leads workshops and training sessions.</td>
-              <td colspan="4">Mentors others in creating complex digital objects. Advises on best practices and innovative solutions. Leads workshops and training sessions.</td>
-              <td colspan="3">Mentors others in using and managing systems and platforms. Advises on best practices and innovative solutions. Leads workshops and training sessions.</td>
-              <td colspan="2">Mentors others in information and content management. Advises on best practices and innovative solutions. Leads workshops and training sessions.</td>
+            <tr class="table-master">
+              <th scope="row"><strong>Mastery (mentoring and advisory practice)</strong> development / implementation of complex resources / systems / platforms, can lead/mentor others, advisory role, expert in the field</th>
+              <td colspan="3">
+                <ul>
+                  <li>Mentors others in creating simple digital objects.</li>
+                  <li>Advises on best practices and innovative solutions.</li>
+                  <li>Leads workshops and training sessions.</li>
+                </ul>
+              </td>
+              <td colspan="4">
+                <ul>
+                  <li>Mentors others in creating complex digital objects.</li>
+                  <li>Advises on best practices and innovative solutions.</li>
+                  <li>Leads workshops and training sessions.</li>
+                </ul>
+              </td>
+              <td colspan="3">
+                <ul>
+                  <li>Mentors others in using and managing systems and platforms.</li>
+                  <li>Advises on best practices and innovative solutions.</li>
+                  <li>Leads workshops and training sessions.</li>
+                </ul>
+              </td>
+              <td colspan="2">
+                <ul>
+                  <li>Mentors others in information and content management.</li>
+                  <li>Advises on best practices and innovative solutions.</li>
+                  <li>Leads workshops and training sessions.</li>
+                </ul>
+              </td>
             </tr>
-            <tr>
-              <th scope="row">Sustainability (community & continuity building for sustainable skills and expertise within the organisation) Management / life cycle / review / preservation strategies Can devise and implement strategy and frameworks for continuity and risk management</th>
-              <td colspan="3">Develops strategies for sustainable skill-building in creating simple digital objects. Builds a community of practice within the organisation. Ensures continuity and risk management for digital skills and assets.</td>
-              <td colspan="4">Develops strategies for sustainable skill-building in creating complex digital objects. Builds a community of practice within the organisation. Ensures continuity and risk management for digital skills and assets.</td>
-              <td colspan="3">Develops strategies for sustainable skill-building in using systems and platforms. Builds a community of practice within the organisation. Ensures continuity and risk management for systems and platforms.</td>
-              <td colspan="2">Develops strategies for sustainable skill-building in information and content management. Builds a community of practice within the organisation. Ensures continuity and risk management for information management.</td>
+            <tr class="table-sustainable">
+              <th scope="row"><strong>Sustainability (community & continuity building for sustainable skills and expertise within the organisation)</strong> Management / life cycle / review / preservation strategies Can devise and implement strategy and frameworks for continuity and risk management</th>
+              <td colspan="3">
+                <ul>
+                  <li>Develops strategies for sustainable skill-building in creating simple digital objects.</li>
+                  <li>Builds a community of practice within the organisation.</li>
+                  <li>Ensures continuity and risk management for digital skills and assets.</li>
+                </ul>
+              </td>
+              <td colspan="4">
+                <ul>
+                  <li>Develops strategies for sustainable skill-building in creating complex digital objects.</li>
+                  <li>Builds a community of practice within the organisation.</li>
+                  <li>Ensures continuity and risk management for digital skills and assets.</li>
+                </ul>
+              </td>
+              <td colspan="3">
+                <ul>
+                  <li>Develops strategies for sustainable skill-building in using systems and platforms.</li>
+                  <li>Builds a community of practice within the organisation.</li>
+                  <li>Ensures continuity and risk management for systems and platforms.</li>
+                </ul>
+              </td>
+              <td colspan="2">
+                <ul>
+                  <li>Develops strategies for sustainable skill-building in information and content management.</li>
+                  <li>Builds a community of practice within the organisation.</li>
+                  <li>Ensures continuity and risk management for information management.</li>
+                </ul>
+              </td>
             </tr>
           </tbody>
         </table>
