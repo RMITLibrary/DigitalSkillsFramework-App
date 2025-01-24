@@ -19,8 +19,14 @@ module.exports = {
     static: path.resolve(__dirname, 'dist'),
     port: PORT,
     hot: true,
+    watchFiles: ['./index.html'],
   },
-  plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      title: 'Digital Skills/Systems Growth Framework',
+    }),
+  ],
   module: {
     rules: [
       {
